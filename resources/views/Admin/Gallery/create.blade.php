@@ -15,9 +15,13 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="IMG">IMG</label>
-        <input type="file" class="form-control" id="IMG" name="img"   required >
+        <label for="head">head</label>
+        <input type="text" class="form-control" id="head" name="head"   required >
     </div>
+    <div class="form-group">
+      <label for="IMG">IMG</label>
+      <input type="file" class="form-control" id="IMG" name="img"   required >
+  </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>

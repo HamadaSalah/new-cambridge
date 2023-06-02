@@ -14,6 +14,7 @@
                     <th class="border-top-0">#</th>
                     <th class="border-top-0">Img</th>
                     <th class="border-top-0">Categroy</th>
+                    <th class="border-top-0">Header</th>
                     <th class="border-top-0">Action</th>
                 </tr>
             </thead>
@@ -25,6 +26,7 @@
                         <a data-fancybox="gallery" href="{{asset($gallery->img)}}"> <img src="{{asset($gallery->img)}}" style="width: 100px;height: 100px;" class="img-thumbnail" alt=""></a>    
                     </td>
                     <td>{{$gallery->category->name}}</td>
+                    <td>{{$gallery->head}}</td>
                     <td>
                         <form style="display: inline;" action="{{route('admin.gallery.destroy', $gallery->id)}}" method="post">
                             @csrf

@@ -7,6 +7,7 @@ use App\Models\CAS;
 use App\Models\Event;
 use App\Models\EventGall;
 use App\Models\Facil;
+use App\Models\GallCategory;
 use App\Models\Gallery;
 use App\Models\HomeSlider;
 use App\Models\KG;
@@ -161,8 +162,10 @@ class HomeController extends Controller
 
     public function getGallery($id)
     {
-        $gals = Gallery::where('category_id', $id)->get();
-        return view('getGallery', compact('gals'));
+        $gals = Gallery::where('category_id', $id)->get()->groupBy('head', true) ;
+        $name = GallCategory::findOrFail($id)->name;
+        // dd($gals);
+         return view('getGallery', compact('gals','name'));
     }
     //end of getGallery
 

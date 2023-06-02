@@ -45,11 +45,13 @@ class GalleryController extends Controller
         $request->validate([
             'category_id' => 'required',
             'img' => 'required',
+            'head' => 'required',
         ]);
         $img = $this->verifyAndStoreImage($request);
         Gallery::create([
             'category_id' => $request->category_id,
             'img' => $img,
+            'head' => $request->head,
         ]);
         return redirect()->route('admin.gallery.index');
     }
