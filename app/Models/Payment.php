@@ -5,14 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tut extends Model
+class Payment extends Model
 {
     use HasFactory;
     protected $guarded = [];
-    protected $casts = [
-        'dates' => 'array'
-    ];
-    public function payment() {
-        return $this->hasOne(Payment::class);
+    public function tut() {
+        return $this->belongsTo(Tut::class, 'tut_id', 'id');
     }
+
 }

@@ -1,7 +1,7 @@
 @extends('Admin.master')
 @section('content')
 <h2 style="padding-bottom: 35px;float: left;margin-top: 0">All Classess</h2>
-{{-- <a href="{{route('admin.classs.create')}}">  
+{{-- <a href="{{route('admin.classs.create')}}">
     <button class="btn btn-primary" style="float: right"><i class="fa fa-plus"> </i>  New Video</button>
 </a> --}}
 <div class="clearfix"></div>
@@ -13,7 +13,7 @@
                 <tr>
                     <th class="border-top-0">#</th>
                     <th class="border-top-0">name</th>
-                    <th class="border-top-0">Amount</th>
+                    <th class="border-top-0">Total</th>
                     <th class="border-top-0">Action</th>
                 </tr>
             </thead>
@@ -31,7 +31,7 @@
                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             <i class="fa fa-pencil-square-o"></i> Edit
                         </button>
-                    
+
                      </td>
 
                 </tr>
@@ -42,9 +42,9 @@
     </div>
 
     @else
-        <div class="text-center">No Data Available</div> 
+        <div class="text-center">No Data Available</div>
     @endif
-     
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -61,7 +61,7 @@
                     @method('PUT')
                     <div class="form-group">
                         <label for="name">Head</label>
-                        <select class="custom-select custom-select-lg mb-3" name="id">
+                        <select class="custom-select custom-select-lg mb-3" name="tut_id" id="optionDropdown">
                             <option selected>select Grade</option>
                             @foreach ($classes as $grad)
                                 <option value="{{$grad->id}}">{{$grad->class}}</option>
@@ -69,14 +69,51 @@
                           </select>
                     </div>
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="number" class="form-control" id="name" name="amount"  placeholder="Amount JOD" required></input>
+                        <label for="first">First Pay</label>
+                        <input type="number" class="form-control" id="first" name="first"  placeholder="Amount JOD" ></input>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group">
+                        <label for="second">Second Pay</label>
+                        <input type="number" class="form-control" id="second" name="second"  placeholder="Amount JOD" ></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="third">Third Pay</label>
+                        <input type="number" class="form-control" id="third" name="third"  placeholder="Amount JOD" ></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="fourth">Fourth Pay</label>
+                        <input type="number" class="form-control" id="fourth" name="fourth"  placeholder="Amount JOD" ></input>
+                    </div>
+                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
                 </div>
          </div>
         </div>
     </div>
-  
+@push('custom-scripts')
+    <script>
+        $(document).ready(function() {
+            $('#optionDropdown').change(function() {
+                var selectedOption = $(this).val();
+
+                $.ajax({
+                    url: "../api/getPayments/" + selectedOption,
+                    type: "GET",
+                    success: function(response) {
+                        // Populate the input field with the fetched data
+                        $('#first').val(response.first);
+                        $('#second').val(response.second);
+                        $('#third').val(response.third);
+                        $('#fourth').val(response.fourth);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
+
+@endpush
 @endsection
+

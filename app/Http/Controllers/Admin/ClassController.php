@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Payment;
 use App\Models\Tut;
 use Illuminate\Http\Request;
 
@@ -72,12 +73,15 @@ class ClassController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'id' => 'required',
-            'amount' => 'required',
+            'tut_id' => 'required',
         ]);
-        $class = Tut::findOrFail($request->id);
-        $class->update([
-            'amount' => $request->amount
+        $pat = Payment::updateOrCreate(['tut_id' => $request->tut_id],
+        [
+           'first' => $request->first,
+           'second' => $request->second,
+           'third' => $request->third,
+           'fourth' => $request->fourth,
+           'total' => $request->first + $request->second + $request->third + $request->fourth
         ]);
         return redirect()->back()->with('success', 'updated successfully');
     }
@@ -91,5 +95,14 @@ class ClassController extends Controller
     public function destroy($id)
     {
         //
+    }
+    //
+    public function getPayments($id) {
+        $payments = Payment::where('tut_id', $id)->first();
+        if($payments)
+            return response()->json($payments);
+        else
+            return response()->json([]);
+
     }
 }

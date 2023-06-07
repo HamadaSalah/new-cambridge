@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('/tut', [HomeController::class, 'getTut'])->name('getTut');
 Route::post('/getcalenders', [HomeController::class, 'getcalenders'])->name('getcalenders');
+Route::get('/getPayments/{id}', [\App\Http\Controllers\Admin\ClassController::class, 'getPayments'])->name('getPayments');

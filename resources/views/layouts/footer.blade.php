@@ -52,7 +52,7 @@
                         <span>|</span>
                         <li class="px-3"><a class="text-white" href="{{route('polices')}}">CHS Policies</a></li>
                         <span>|</span>
-                        <li class="px-3"><a class="text-white" href="{{route('unver_cons')}}"> UNi-Counseling 
+                        <li class="px-3"><a class="text-white" href="{{route('unver_cons')}}"> UNi-Counseling
  </a></li>
                     </ul>
                 </div>

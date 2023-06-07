@@ -13,6 +13,7 @@ use App\Models\HomeSlider;
 use App\Models\KG;
 use App\Models\MYP;
 use App\Models\IBDP;
+use App\Models\Payment;
 use App\Models\Polices;
 use App\Models\Primary;
 use App\Models\ReachUs;
@@ -42,7 +43,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        
+
         $school_calender = CalenderEvent::select('start', 'end', 'display', 'color', 'category', 'type', 'desc')->get()->map(function ($school_calender, $key) {
             return [
                 'start' => $school_calender->start,
@@ -86,8 +87,8 @@ class HomeController extends Controller
 
     public function tuitionFees()
     {
-        $tuts = Tut::all();
-        return view('tuitionFees');
+        $tuts = Tut::with('payment')->get();
+        return view('tuitionFees', compact('tuts'));
     }
 
     //end of tuitionfees
@@ -129,7 +130,7 @@ class HomeController extends Controller
 
     public function CAS()
     {
-        
+
         return view('CAS',['cas' => CAS::first()]);
     }
     //end of CAS

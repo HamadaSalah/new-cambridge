@@ -2,6 +2,7 @@
 @section('content')
 <div class="aply_now_page">
 
+
     <div class="w-100 z-n1">
         <img src="assets/images/Asset.png" alt="" >
     </div>
@@ -10,16 +11,16 @@
         <div class="row">
             <div class="col-12 mt-4 REP">
                 <h1 class="pb-4 text-uppercase">
-                
-                
-                
+
+
+
                 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-                
+
                     TUITION FEES
                 </h1>
                 <h3 class="pb-1 lh-lg m-0 text-uppercase">
@@ -95,13 +96,40 @@
             </div>
         </div>
     </div> -->
-     
-     
-     
+
+
+
      <img class="img-fluid" width="500" height="600" src="{{asset('assets/images/fees.jpg')}}" style=" display: block;margin-left: auto;   margin-right: auto;
   width: 50%;" alt="">
-     
 
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <thead class="table " style="background-color: #b11e24!important;">
+                <tr>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Total Of Payment</th>
+                    <th scope="col">1ST Payment (1/5)</th>
+                    <th scope="col">2ND Payment (1/6)</th>
+                    <th scope="col">3RD Payment (1/8)</th>
+                    <th scope="col">4TH Payment (1/12d)</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach($tuts as $pay)
+                    <tr>
+                        <th scope="col">{{$pay->payment->tut->class ?? ''}}</th>
+                        <th scope="col">{{$pay->payment->total ?? '--'}}</th>
+                        <th scope="col">{{$pay->payment->first ?? '--'}}</th>
+                        <th scope="col">{{$pay->payment->second ?? '--'}}</th>
+                        <th scope="col">{{$pay->payment->third ?? '--'}}</th>
+                        <th scope="col">{{$pay->payment->fourth ?? '--'}}</th>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
     <div class="container pb-4">
         <div class="row">
 
@@ -141,8 +169,8 @@
                    > A yearly fee of JD 300 for additional one hour supervision of KG students before and after normal school hours is charged. However, students supervised during duty hours are not offered any bus services in the afternoon.
                 </p>
                 <p class="pb-2 lh-lg m-0">
-                    
-                    
+
+
                   > Seat reservation fee for existing students (the 1st installment fee) must be paid by 1/4/2023
 for the coming academic year. Seats not reserved by the given date will be offered to students on
 our waiting list.
@@ -161,7 +189,7 @@ our waiting list.
                 </p>
                  <p class="pb-2 lh-lg m-0">
                  > Transportation is offered to most areas of West Amman. Price is JD 750 for inside Amman, and JD 800 for Airport Road, round trip per year, payable 1/5/2023 . Each bus is accompanied by an assistant for child safety and security.
-                 
+
 
                 </p>
 
@@ -171,5 +199,5 @@ our waiting list.
         </div>
     </div>
 </div>
- 
+
 @endsection
