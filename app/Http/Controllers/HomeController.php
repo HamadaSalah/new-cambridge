@@ -163,7 +163,7 @@ class HomeController extends Controller
 
     public function getGallery($id)
     {
-        $gals = Gallery::where('category_id', $id)->get()->groupBy('head', true) ;
+        $gals = Gallery::where('category_id', $id)->get()->groupBy('head', true);
         $name = GallCategory::findOrFail($id)->name;
         // dd($gals);
          return view('getGallery', compact('gals','name'));

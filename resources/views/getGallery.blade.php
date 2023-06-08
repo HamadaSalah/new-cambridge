@@ -5,8 +5,8 @@
     <div class="px-3 py-5 rounded-3">
         <div
             class="text-container padding-start ps-0 ps-md-5 ps-lg-5 ps-xl-5 ps-xxl-5 pt-5 text-center text-md-start text-lg-start">
-            <h2 class="text-uppercase fw-bold text-uppercase pb-4">{{$name}} GALLERY  
-                
+            <h2 class="text-uppercase fw-bold text-uppercase pb-4">{{$name}} GALLERY
+
             </h2>
         </div>
         <div class="main_color_bg d-none d-sm-none d-md-block w-50 shape-line">
@@ -34,10 +34,10 @@
                          @foreach ($myitem as $item)
                         <div class="col-12 col-md-4 col-lg-3 mb-4">
                             <a href="{{ asset($item->img) }}"  data-fancybox="gallery">
-                            <img src="{{ asset($item->img) }}" style="width: 100%"
+                            <img src="{{ asset($item->img) }}" style="width: 100%; height: 300px"
                                 alt="photo" class="img-fluid rounded-3 overflow-hidden">
                             </a>
-                        </div>                    
+                        </div>
                         @endforeach
                     @endforeach
                 @else
