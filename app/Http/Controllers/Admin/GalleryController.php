@@ -47,12 +47,14 @@ class GalleryController extends Controller
             'img' => 'required',
             'head' => 'required',
         ]);
-        $img = $this->verifyAndStoreImage($request);
-        Gallery::create([
-            'category_id' => $request->category_id,
-            'img' => $img,
-            'head' => $request->head,
-        ]);
+        $img = $this->verifyAndStoreMultiImage($request);
+        foreach($img as $myimm) {
+            Gallery::create([
+                'category_id' => $request->category_id,
+                'img' => $myimm,
+                'head' => $request->head,
+            ]);
+        }
         return redirect()->route('admin.gallery.index');
     }
 

@@ -23,7 +23,37 @@
          </p> --}}
     </div>
     @endif
-    <div class="library-gallery">
+    <div class="container">
+        <div class="row">
+            @if ($gals->count())
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                @foreach ($gals as $key => $mygal)
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link  <?php if($loop->index == 0) echo"active"; ?>" id="{{$key}}-tab" data-bs-toggle="tab" data-bs-target="#{{$key}}" type="button" role="tab" aria-controls="{{$key}}" aria-selected="true">{{$key}}</button>
+                    </li>
+                @endforeach
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                @foreach ($gals as $key => $mygal)
+                    <div class="tab-pane fade show <?php if($loop->index == 0) echo"active"; ?>" id="{{$key}}" role="tabpanel" aria-labelledby="{{$key}}-tab">
+                        <div class="row">
+                        @foreach ($mygal as $item)
+                            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                                <a href="{{ asset($item->img) }}"  data-fancybox="gallery">
+                                <img src="{{ asset($item->img) }}" style="width: 100%; height: 300px;padding: 20px"
+                                    alt="photo" class="img-fluid rounded-3 overflow-hidden">
+                                </a>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                @endforeach
+              </div>      
+                
+            @endif
+        </div>
+    </div>
+    {{-- <div class="library-gallery">
         <div class="container my-5 pb-5">
             <div class="row">
                 @if($gals->count() > 0)
@@ -45,7 +75,7 @@
                 @endif
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
 @push('custom-sc')
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

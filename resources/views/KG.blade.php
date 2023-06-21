@@ -79,6 +79,10 @@
             <p class="pb-3 lh-lg m-0 Open_Sans_font fw-semibold">
                 {!!$kg->sec4_p!!}            </p>
         </div>
+        <div class="col-12 col-md-12 col-lg-6 mt-4">
+            <img src="{{asset('assets/images/caie.png')}}" class="mb-3" alt="" width="100%">
+            <img src="{{asset('assets/images/caie.png')}}" class="mb-3" alt="" width="100%">
+        </div>
     </div>
     <div class="d-flex justify-content-end me-5 mt-5">
         <a class="fs-7 py-1 px-4 first_color Open_Sans_font fw-bold text-capitalize rounded-2 hover_btn _borders " href="https://test.cambridge.edu.jo/tuition-fees">APPLY NOW</a>

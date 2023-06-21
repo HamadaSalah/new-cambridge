@@ -1,3 +1,6 @@
+*:not(i, .fa) {
+    font-family: 'playfair', sans-serif!important;
+}
 .homeslider p {
     font-size: 21px;
     font-family: 'Open Sans', sans-serif ;

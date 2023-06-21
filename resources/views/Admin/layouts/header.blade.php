@@ -27,6 +27,7 @@
     <link href="{{ asset('Dashboard/assets/css/mycss.css')}}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/3859c5f1d0.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    
     @stack('styles')
 
 </head>
