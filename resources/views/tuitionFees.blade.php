@@ -99,8 +99,8 @@
 
 
 
-     <img class="img-fluid" width="500" height="600" src="{{asset('assets/images/fees.jpg')}}" style=" display: block;margin-left: auto;   margin-right: auto;
-  width: 50%;" alt="">
+     {{-- <img class="img-fluid" width="500" height="600" src="{{asset('assets/images/fees.jpg')}}" style=" display: block;margin-left: auto;   margin-right: auto;
+  width: 50%;" alt=""> --}}
 
     <div class="container">
         <div class="row">
