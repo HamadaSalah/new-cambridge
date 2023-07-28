@@ -99,26 +99,34 @@
 
 
 
-     <img class="img-fluid" width="500" height="600" src="{{asset('assets/images/fees.jpg')}}" style=" display: block;margin-left: auto;   margin-right: auto;
-  width: 50%;" alt="">
+  <!--   <img class="img-fluid" width="500" height="600" src="{{asset('assets/images/fees.jpg')}}" style=" display: block;margin-left: auto;   margin-right: auto;-->
+  <!--width: 50%;" alt="">-->
 
-    {{-- <div class="container">
+<div class="container">
         <div class="row">
-            <table class="table">
+            <table class="table" style="font-family: verdana!important">
                 <thead class="table " style="background-color: #b11e24!important;">
                 <tr>
-                    <th scope="col">Grade</th>
-                    <th scope="col">Total Of Payment</th>
-                    <th scope="col">1ST Payment (1/5)</th>
-                    <th scope="col">2ND Payment (1/6)</th>
-                    <th scope="col">3RD Payment (1/8)</th>
-                    <th scope="col">4TH Payment (1/12d)</th>
+                    <th scope="col" style="color:#FFF">Grade</th>
+                    <th scope="col" style="color:#FFF">REGISTERATION FEES</th>
+                    <th scope="col" style="color:#FFF">Total Of Payment</th>
+                    <th scope="col" style="color:#FFF">1ST Payment (1/5)</th>
+                    <th scope="col" style="color:#FFF">2ND Payment (1/6)</th>
+                    <th scope="col" style="color:#FFF">3RD Payment (1/8)</th>
+                    <th scope="col" style="color:#FFF">4TH Payment (1/12d)</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($tuts as $pay)
                     <tr>
                         <th scope="col">{{$pay->payment->tut->class ?? ''}}</th>
+                                               @if ($loop->index >= 4)
+                        <th scope="col">400</th>
+                            @else
+                        <th scope="col">200</th>
+
+                        @endif
+
                         <th scope="col">{{$pay->payment->total ?? '--'}}</th>
                         <th scope="col">{{$pay->payment->first ?? '--'}}</th>
                         <th scope="col">{{$pay->payment->second ?? '--'}}</th>
@@ -129,8 +137,7 @@
                 </tbody>
             </table>
         </div>
-    </div> --}}
-    <div class="container pb-4">
+    </div>    <div class="container pb-4">
         <div class="row">
 
             <div class="red_line_section mx-auto my-3"></div>
