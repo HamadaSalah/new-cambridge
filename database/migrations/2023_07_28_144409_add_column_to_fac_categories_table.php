@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('galleries', function (Blueprint $table) {
-            // $table->string('head');
+        Schema::table('fac_categories', function (Blueprint $table) {
+            $table->string('img')->nullable();
+
         });
     }
 
@@ -25,8 +26,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('galleries', function (Blueprint $table) {
-            // $table->string('head');
+        Schema::table('fac_categories', function (Blueprint $table) {
+            $table->string('img')->nullable();
+
         });
     }
 };

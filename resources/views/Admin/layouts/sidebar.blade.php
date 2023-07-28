@@ -42,6 +42,12 @@
                             <p>Gallery</p>
                         </a>
                     </li>
+                    <li class="{{ Request::segment(2) == 'facil_cat' ? 'active' : null }}">
+                        <a class="nav-link" href="{{route('admin.facil_cat.index')}}">
+                            <i class="nc-icon nc-album-2"></i>
+                            <p>Facility Categories</p>
+                        </a>
+                    </li>
                     <li class="{{ Request::segment(2) == 'facil' ? 'active' : null }}">
                         <a class="nav-link" href="{{route('admin.facil.index')}}">
                             <i class="nc-icon nc-album-2"></i>

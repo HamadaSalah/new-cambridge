@@ -23,9 +23,8 @@
                 @if($facs->count() > 0)
                 @foreach ($facs as $fac)
                 <div class="col-12 col-md-4 col-lg-3 mb-4">
-                    <img src="{{ asset($fac->img) }}"
-                        alt="photo" class="img-fluid rounded-3 overflow-hidden">
-                </div>
+                    <a data-fancybox="gallery" href="{{ asset($fac->img) }}"> <img src="{{ asset($fac->img) }}" style="width: 100%;border-radius: 5px "  alt=""></a>
+                 </div>
                     
                 @endforeach
                 @else

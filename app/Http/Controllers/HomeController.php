@@ -6,6 +6,7 @@ use App\Models\CalenderEvent;
 use App\Models\CAS;
 use App\Models\Event;
 use App\Models\EventGall;
+use App\Models\FacCategory;
 use App\Models\Facil;
 use App\Models\GallCategory;
 use App\Models\Gallery;
@@ -172,7 +173,8 @@ class HomeController extends Controller
 
     public function facilities()
     {
-        return view('facilities');
+        $cats = FacCategory::all();
+        return view('facilities', compact('cats'));
     }
     //end of facilities
 

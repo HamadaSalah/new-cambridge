@@ -1,3 +1,4 @@
+
 *:not(i, .fa) {
     font-family: 'playfair', sans-serif!important;
 }
@@ -333,6 +334,9 @@ footer .fa {
         width: 95%!important;
     }
    .col-12.col-md-4.col-lg-4.p-0.w-auto {
+        width: 100%!important;
+    }
+    .primary_page img {
         width: 100%!important;
     }
 }

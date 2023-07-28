@@ -83,7 +83,7 @@
                             <div id="carouselExample22" class="carousel slide">
                             <div class="carousel-inner">
                                 @foreach ( json_decode( $cas->sec3_img ) as $img )
-                                <div class="carousel-item active">
+                                <div class="carousel-item {{$loop->index == 0 ? "active" : ''}}">
                                     <img src="{{asset($img)}}" alt="" class="h-100 rounded-3">
                                 </div>
                                 @endforeach
@@ -131,17 +131,15 @@
             <div class="col-12 col-md-12 col-lg-6 mt-4">
                 <h2 class="pb-3 m-0 Open_Sans_font">{!! $cas->sec4_head !!}</h2>
 
-               <!-- <p class="pb-3 lh-lg m-0 Open_Sans_font fw-semibold">
-                    {!! $cas->sec4_p !!}
-                </p>-->
-            </div>
+                     {!! $cas->sec4_p !!}
+             </div>
         </div>
     </div>
 
     <div class="container mb-5">
         <div class="row flex-column-reverse flex-md-column-reverse flex-lg-row-reverse flex-xl-row-reverse flex-xxl-row-reverse mt-5">
 
-          <!--  <div class="col-12 mt-4">
+          <div class="col-12 mt-4">
               <h1 class="pb-4 m-0"> {!! $cas->sec5_head !!}</h1>
 
                 <p class="pb-2 lh-lg m-0 Open_Sans_font fw-semibold">
@@ -169,7 +167,7 @@
                 </div>
 
                 </div>
-            </div> -->
+            </div> 
         </div>
     </div>
 

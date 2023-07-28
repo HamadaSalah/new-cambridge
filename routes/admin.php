@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\CASController;
 use App\Http\Controllers\Admin\ClassController;
 use App\Http\Controllers\Admin\EventGallController;
 use App\Http\Controllers\Admin\EventsController;
+use App\Http\Controllers\Admin\FacilCategoryController;
 use App\Http\Controllers\Admin\FacilController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\IBDPController;
@@ -51,4 +52,5 @@ Route::prefix('admin')->middleware('auth:admin')->name('admin.')->group(function
     Route::resource('/myp', MYPController::class);
     Route::resource('/cas', CASController::class);
     Route::resource('/ibdp', IBDPController::class);
+    Route::resource('/facil_cat', FacilCategoryController::class);
 });

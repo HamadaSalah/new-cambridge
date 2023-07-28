@@ -50,4 +50,7 @@ footer .fa {
     .misimg img {
         height: unset!important;
     }
+    .primary_page img {
+        width: 100%!important;
+    }
 }
