@@ -1,0 +1,339 @@
+*:not(i, .fa) {
+    font-family: 'playfair', sans-serif!important;
+}
+.homeslider p {
+    font-size: 21px;
+    font-family: 'Open Sans', sans-serif ;
+}
+.slick-next, .slick-prev {
+    display: none!important;
+}
+.events span {
+    font-family: 'Open Sans';
+}
+.white_bg h6 {
+    font-size: 16px;
+    color: #bb2d3b;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+.card-title {
+    text-transform: uppercase;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.historydiv p, .missiondiv p, .visiondiv p{
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 18px;
+}
+.rechp p {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 18px;
+}
+.addresses a {
+    font-weight: 500;
+}
+.rehus {
+    font-family: 'Open Sans';
+}
+.fc .fc-daygrid-day-number {
+    padding: 4px;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 22px!important;
+}
+.fc .fc-daygrid-day-bg .fc-bg-event {
+    opacity: 1;
+}
+.fc .fc-daygrid-day-top {
+    /* display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    /* margin-top: 80px; */
+     display: block;
+    height: 100%;
+    position: absolute;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+.calendar {
+    width: 50%;
+    margin: auto;
+}
+.fc td, .fc th {
+    border-style: none !important;
+  }
+  
+footer .fa {
+    font-size: 22px!important;
+    color: #FFF;
+}
+.pb-2 {
+    font-family: 'Open Sans';
+}
+.fc .fc-scrollgrid-liquid {
+    border: none!important;
+}
+.fc .fc-daygrid-day-bg .fc-bg-event {
+    z-index: 2;
+    border-radius: 15px;
+    border: 5px solid #fff;
+}
+.fc .fc-col-header-cell-cushion {
+    color: #bb2d3b;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+.fc-event-title {
+    display: none;
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+}
+.fc-day {
+    cursor: pointer;
+}
+/* .fc-event:hover >.fc-event-title {
+    display: block
+}
+.fc-daygrid-day-number:hover ~ .fc-event-title {
+    display: block;
+} */
+
+.FirstCarou .carousel-control-prev-icon {
+    background-color: #b11e24;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+.FirstCarou .carousel-control-next-icon {
+    background-color: #b11e24;
+    border-radius: 10px;
+    padding: 20px;
+  }
+.f_slider p {
+    font-size: 21px;font-family: 'Open Sans', sans-serif;
+}
+.f_slider h1, .f_slider h5, .f_slider p {
+    color: #1f2935!important;
+}
+.mypp {
+    width: 100%;
+    min-height: 800px;
+    display: block;
+    padding: 50px 0;
+}
+.f_slider h5 {
+    font-weight: bold;
+    font-size: 30px!important;
+    color: #b11e24!important;
+    font-family: 'playfair';
+ }
+.primary_page p {
+    font-family: 'Open Sans', sans-serif;
+}
+.shape-line {
+    display: none!important;
+}
+.FirstCarou .carousel-control-prev-icon {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+.dwa, .adw{
+    font-size: 20px;
+    background: transparent;
+    border: 0;
+}
+.fa.fa-arrow-circle-left, .fa.fa-arrow-circle-right{
+    background: transparent;
+    border: 0;
+     font-size: 40px;
+    background: -webkit-linear-gradient(#1f2935, #1f2935);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+ }
+ .media-width {
+    width: 200px;
+    margin-bottom: 20px;
+ }
+
+.Media_page h4 {
+    font-size: 16px!important;
+}
+.Media_page button {
+    font-size: 16px!important;
+}
+.FirstCarou {
+    background: url('../images/fgf.jpg') no-repeat top;
+    background-size: cover;
+ }
+ .FirstCarou .carousel.slide {
+   background-color: rgb(237 232 232 / 0%);
+    padding-top: 135px;
+    height: 628px;
+
+ }
+.fc .fc-daygrid-day-top {
+    display: block;
+    height: 100%;
+    position: absolute;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.fc .fc-daygrid-day-number {
+    padding: 4px;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 22px!important;
+    display: block;
+    text-align: center;
+    margin: auto;
+    line-height: 100%;
+    height: unset;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+ }
+.myynavv {
+    position: absolute!important;
+    width: 100%;
+}
+.myynavv ul > li > a {
+    color: #1f2935;
+}
+
+.unver {
+    width: 100%;
+    min-height: 800px;
+    display: block;
+}
+.fc .fc-scroller-liquid-absolute{
+    overflow: hidden!important;
+}
+.myCards::-webkit-scrollbar {
+    width: 12px;
+}
+
+.myCards::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.myCards::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+
+
+
+
+@media screen and (max-width: 798px) {
+    .misimg img {
+        height: unset!important;
+    }
+    .calendar {
+        width: 100%;
+        margin: auto;
+    }
+    .FirstCarou .carousel-control-next-icon, .FirstCarou .carousel-control-prev-icon {
+        margin-top: 200px;
+      }
+    .adw, .dwa {
+        top: 90%!important;
+    }
+    .stylerbottom {
+        display: none;
+    }
+    embed {
+        width: 100%!important;
+        height: 600px!important;
+    }
+    .FirstCarou .carousel.slide {
+        height: unset;
+    }
+    .adw, .dwa {
+        bottom: -16%!important;
+    }
+    .vanilla-calendar, .stepsss {
+        padding: 0!important;
+    }
+    .fc .fc-daygrid-day-top {
+        line-height: 112px!important;
+    }
+    .modal.show .modal-dialog, .modal.fade.show {
+        width: 100%!important;
+    }
+    .h-100.rounded-3 {
+        margin-left: 0!important;
+    }
+    .d-flex.justify-content-end.me-5.mt-5 {
+        padding-top: 15px;
+    }
+    #carouselExample22 {
+        width: 100%!important;
+    }
+    #carouselExample22 .carousel-item.active {
+        height: 400px!important;
+    }
+    .FirstCarou .carousel.slide {
+        padding-top: 90px!important;
+    }
+    .f_slider br {
+        display: none;
+    }
+    .FirstCarou {
+        padding-bottom: 60px;
+    }
+    .text-container.padding-start.ps-0.ps-md-5.ps-lg-5.ps-xl-5.ps-xxl-5.text-center.text-md-start.text-lg-start img{
+        width: 100%!important;
+    }
+    .reach_us_page img {
+        width: 100%;
+    }
+    .py-5 {
+        padding-top: 1rem!important;
+    }
+    .col-12.col-md-6.col-lg-3 img {
+        width: 100%;
+    }
+   .row.justify-content-center.align-items-center {
+    display: block!important;
+    position: relative!important;
+    width: 100%!important;
+    padding: 0;
+    margin: 0;
+    }
+    .gallery.z-n1 {
+    width: 100%!important;
+    margin:  20px 0!important;
+    }
+    .gallery_border {
+        width: 95%!important;
+    }
+   .col-12.col-md-4.col-lg-4.p-0.w-auto {
+        width: 100%!important;
+    }
+}
+    

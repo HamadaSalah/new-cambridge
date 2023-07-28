@@ -49,8 +49,8 @@
                     <ul class="left-side d-flex align-items-center Open_Sans_font text-uppercase py-2">
                         <span class="d-none d-lg-block d-xl-block d-xxl-block">|</span>
                         <li class="px-3"><a class="text-white" href="https://chs.follettdestiny.com/consortium/servlet/presentconsortiumloginform.do">library</a></li>
-                        <span><!-- | --></span>
-                     <!--   <li class="px-3"><a class="text-white" href="{{route('polices')}}">CHS Policies</a></li>-->
+                        <span>|</span>
+                        <li class="px-3"><a class="text-white" href="{{route('polices')}}">CHS Policies</a></li>
                         <span>|</span>
                         <li class="px-3"><a class="text-white" href="{{route('unver_cons')}}"> UNi-Counseling
  </a></li>

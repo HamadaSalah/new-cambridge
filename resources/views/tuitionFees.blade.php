@@ -7,126 +7,38 @@
         <img src="assets/images/Asset.png" alt="" >
     </div>
 
-   <!-- <div class="container">
-        <div class="row">
-            <div class="col-12 mt-4 REP">
-                <h1 class="pb-4 text-uppercase">
+  
 
 
+{{-- 
+     <img class="img-fluid" width="500" height="600" src="{{asset('assets/images/fees.jpg')}}" style=" display: block;margin-left: auto;   margin-right: auto;
+  width: 50%;" alt=""> --}}
 
-                .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-                    TUITION FEES
-                </h1>
-                <h3 class="pb-1 lh-lg m-0 text-uppercase">
-                    Enroll Now
-                </h3>
-                <form class="Open_Sans_font mytutform">
-                    <div class="mb-2 mx-0 mx-md-2 mx-lg-2 mx-xl-2 mx-xxl-2">
-                        <label for="Grade" class="form-label ms-2 Open_Sans_font fs-7 m-0">Grade</label>
-                        <select class="form-select selectTut" aria-label="Default select example">
-                            <option selected class="">Select Grade</option>
-                            <option value="KG">KG</option>
-                            <option value="First Grade">First Grade</option>
-                            <option value="Second Grade">Second Grade</option>
-                            <option value="Third Grade">Third Grade</option>
-                            <option value="Fourth Grade">Fourth Grade</option>
-                            <option value="Fifth Grade">Fifth Grade</option>
-                            <option value="Sixth Grade">Sixth Grade</option>
-                            <option value="Seventh Grade">Seventh Grade</option>
-                            <option value="Eighth Grade">Eighth Grade</option>
-                            <option value="Nineteenth Grade">Nineteenth Grade</option>
-                            <option value="Tenth Grade">Tenth Grade</option>
-                            <option value="eleventh Grade">eleventh Grade</option>
-                          </select>
-                    </div>
-                    <div class="d-flex w-100 flex-column flex-md-row flex-lg-row align-items-center TOtal">
-                        <div class="mb-2 w-100 mx-2">
-                            <label for="Total" class="form-label ms-2 Open_Sans_font fs-7 m-0">Total</label>
-                            <input type="text" class="form-control rounded-3 shadow fs-7 py-2" id="Total"
-                                   placeholder="Total" value="5">
-                            <p class="mt-2 ms-2 mb-0">
-                                2023-2024
-                            </p>
-                        </div>
-                        <div class="mb-2 w-100 mx-2">
-                            <label for="1st Paymt" class="form-label ms-2 Open_Sans_font fs-7 m-0">1st Paymt</label>
-                            <input type="text" class="form-control rounded-3 shadow fs-7 py-2" id="1stPaymt"
-                                   placeholder="1st Paymt">
-                            <p class="mt-2 ms-2 mb-0">
-                                1/4/2023
-                            </p>
-                        </div>
-                        <div class="mb-2 w-100 mx-2">
-                            <label for="2st Paymt" class="form-label ms-2 Open_Sans_font fs-7 m-0">2st Paymt</label>
-                            <input type="text" class="form-control rounded-3 shadow fs-7 py-2" id="2stPaymt"
-                                   placeholder="2st Paymt">
-                            <p class="mt-2 ms-2 mb-0">
-                                1/6/2023
-                            </p>
-                        </div>
-                        <div class="mb-2 w-100 mx-2">
-                            <label for="3st Paymt" class="form-label ms-2 Open_Sans_font fs-7 m-0">3st Paymt</label>
-                            <input type="text" class="form-control rounded-3 shadow fs-7 py-2" id="3stPaymt"
-                                   placeholder="3st Paymt">
-                            <p class="mt-2 ms-2 mb-0">
-                                1/8/2023
-                            </p>
-                        </div>
-                        <div class="mb-2 w-100 mx-2">
-                            <label for="4st Paymt" class="form-label ms-2 Open_Sans_font fs-7 m-0">4st Paymt</label>
-                            <input type="text" class="form-control rounded-3 shadow fs-7 py-2" id="4stPaymt"
-                                   placeholder="4st Paymt">
-                            <p class="mt-2 ms-2 mb-0">
-                                1/12/2023
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-1">
-                        <button type="button" class="rounded-3 first_color hover_btn _borders my-4 ms-2 px-3 py-1" id="AddSTD"><span
-                                class="me-1"><i class="fa fa-plus"></i></span> ADD STUDENT
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
-
-
-
-  <!--   <img class="img-fluid" width="500" height="600" src="{{asset('assets/images/fees.jpg')}}" style=" display: block;margin-left: auto;   margin-right: auto;-->
-  <!--width: 50%;" alt="">-->
-
-<div class="container">
-        <div class="row">
-            <table class="table" style="font-family: verdana!important">
+    <div class="container">
+        <div class="row" style="position: relative;overflow: scroll">
+            <table class="table">
                 <thead class="table " style="background-color: #b11e24!important;">
                 <tr>
-                    <th scope="col" style="color:#FFF">Grade</th>
-                    <th scope="col" style="color:#FFF">REGISTERATION FEES</th>
-                    <th scope="col" style="color:#FFF">Total Of Payment</th>
-                    <th scope="col" style="color:#FFF">1ST Payment (1/5)</th>
-                    <th scope="col" style="color:#FFF">2ND Payment (1/6)</th>
-                    <th scope="col" style="color:#FFF">3RD Payment (1/8)</th>
-                    <th scope="col" style="color:#FFF">4TH Payment (1/12d)</th>
+                    <th scope="col" style="color: #FFF">Grade</th>
+                    <th scope="col" style="color: #FFF">Registeration Fees</th>
+                    <th scope="col" style="color: #FFF">Total Of Payment</th>
+                    <th scope="col" style="color: #FFF">1ST Payment (1/5)</th>
+                    <th scope="col" style="color: #FFF">2ND Payment (1/6)</th>
+                    <th scope="col" style="color: #FFF">3RD Payment (1/8)</th>
+                    <th scope="col" style="color: #FFF">4TH Payment (1/12d)</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($tuts as $pay)
                     <tr>
                         <th scope="col">{{$pay->payment->tut->class ?? ''}}</th>
-                                               @if ($loop->index >= 4)
-                        <th scope="col">400</th>
+                        <th scope="col">
+                            @if ($loop->index <=3)
+                                {{200}}
                             @else
-                        <th scope="col">200</th>
-
-                        @endif
-
+                                {{400}}
+                            @endif    
+                        </th>
                         <th scope="col">{{$pay->payment->total ?? '--'}}</th>
                         <th scope="col">{{$pay->payment->first ?? '--'}}</th>
                         <th scope="col">{{$pay->payment->second ?? '--'}}</th>
@@ -137,7 +49,8 @@
                 </tbody>
             </table>
         </div>
-    </div>    <div class="container pb-4">
+    </div>
+    <div class="container pb-4">
         <div class="row">
 
             <div class="red_line_section mx-auto my-3"></div>
