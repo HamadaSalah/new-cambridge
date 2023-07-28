@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="FirstCarou">
     
     <div id="carouselExample" class="carousel slide">
@@ -43,7 +42,6 @@
 
       </div>
 </div>
-
 
 {{-- <div class="w-100 stylerbottom" style="margin-top: -11rem!important;position: relative">
     <img class="w-100" src="assets/images/assets8-removebg-preview.png" alt="">
@@ -285,11 +283,21 @@
 <script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>
 <script src='https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js'></script>
 
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js'></script>
+<script src='{{asset('js/full.min.js')}}'></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
+      customButtons: {
+        ForwardButton: {
+            icon: "right-single-arrow",
+            click: function() {}
+        },
+        BackwardButton: {
+            icon: "left-single-arrow",
+            click: function() {}
+        }
+    },
       initialView: 'dayGridMonth',
       themeSystem: 'bootstrap',
       eventDidMount: function(info) {
@@ -311,6 +319,8 @@
 @push('custom-sc')
 <script>
   $(document).ready(function() {
+    $(".fc-prev-button.fc-button.fc-button-primary").html("<i class='fa fa-arrow-circle-left'></i>");
+    $(".fc-next-button.fc-button.fc-button-primary").html("<i class='fa fa-arrow-circle-right'></i>");
     $('.clickerbtn').click(function() {
         var type = $(this).data('type');  
         $.ajax({

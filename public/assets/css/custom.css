@@ -155,7 +155,7 @@ footer .fa {
     background: transparent;
     border: 0;
 }
-.fa.fa-arrow-circle-left, .fa.fa-arrow-circle-right{
+.FirstCarou .fa.fa-arrow-circle-left, .FirstCarou .fa.fa-arrow-circle-right{
     background: transparent;
     border: 0;
      font-size: 40px;
@@ -163,6 +163,10 @@ footer .fa {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
+ }
+.fc-icon.fc-icon-chevron-left,
+.fc-icon.fc-icon-chevron-right {
+    display: none;
  }
  .media-width {
     width: 200px;
