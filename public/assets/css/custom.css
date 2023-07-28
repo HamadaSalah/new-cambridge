@@ -218,6 +218,7 @@ footer .fa {
     text-align: center;
     display: inline-block;
     vertical-align: middle;
+    top: -11px;
  }
 .myynavv {
     position: absolute!important;
@@ -342,6 +343,12 @@ footer .fa {
     }
     .primary_page img {
         width: 100%!important;
+    }
+    .fc .fc-daygrid-day-number {
+        top: -36px;
+    }
+    #calendar {
+        padding-top: 20px;
     }
 }
     
