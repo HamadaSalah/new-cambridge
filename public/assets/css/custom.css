@@ -297,5 +297,43 @@ footer .fa {
     #carouselExample22 .carousel-item.active {
         height: 400px!important;
     }
+    .FirstCarou .carousel.slide {
+        padding-top: 90px!important;
+    }
+    .f_slider br {
+        display: none;
+    }
+    .FirstCarou {
+        padding-bottom: 60px;
+    }
+    .text-container.padding-start.ps-0.ps-md-5.ps-lg-5.ps-xl-5.ps-xxl-5.text-center.text-md-start.text-lg-start img{
+        width: 100%!important;
+    }
+    .reach_us_page img {
+        width: 100%;
+    }
+    .py-5 {
+        padding-top: 1rem!important;
+    }
+    .col-12.col-md-6.col-lg-3 img {
+        width: 100%;
+    }
+   .row.justify-content-center.align-items-center {
+    display: block!important;
+    position: relative!important;
+    width: 100%!important;
+    padding: 0;
+    margin: 0;
+    }
+    .gallery.z-n1 {
+    width: 100%!important;
+    margin:  20px 0!important;
+    }
+    .gallery_border {
+        width: 95%!important;
+    }
+   .col-12.col-md-4.col-lg-4.p-0.w-auto {
+        width: 100%!important;
+    }
 }
     
