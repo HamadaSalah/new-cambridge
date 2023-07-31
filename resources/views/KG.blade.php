@@ -66,7 +66,7 @@
 <div class="container mb-5">
     <div class="row flex-column-reverse flex-md-column-reverse flex-lg-row flex-xl-row flex-xxl-row mt-5">
         <div style="float: right">
-            <img src="{{asset($kg->sec4_img)}}" alt="" class="img-fluid rounded-3" style="width: 50%;float: left;margin: 20px 20px 20px 0;border-radius: 5px!important">
+            <img src="{{asset($kg->sec4_img)}}" alt="" class="img-fluid rounded-3" style="width: 50%;float: left;margin: 20px 20px 20px 0;border-radius: 5px!important;height: 265px;">
                 <h3 class="pb-3">{!!$kg->sec4_head!!}</h3>
                 <p class="pb-3 lh-lg m-0 Open_Sans_font">
                     {!!$kg->sec4_p!!}                </p>

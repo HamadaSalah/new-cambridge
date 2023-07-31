@@ -15,7 +15,7 @@
     </div>
     <div class="form-group">
         <label for="sec1_head">First Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec1_head" name="sec1_head"  placeholder="open in.." required >{!!$cas->sec1_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec1_head" name="sec1_head"  placeholder="open in.."  >{!!$cas->sec1_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec1_head");
         </script>
@@ -23,7 +23,7 @@
 
     <div class="form-group">
         <label for="sec1_p">First Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec1_p" name="sec1_p"  placeholder="open in.." required >{!!$cas->sec1_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec1_p" name="sec1_p"  placeholder="open in.."  >{!!$cas->sec1_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec1_p");
         </script>
@@ -38,7 +38,7 @@
     </div>
     <div class="form-group">
         <label for="sec2_head">Second Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec2_head" name="sec2_head"  placeholder="open in.." required >{!!$cas->sec2_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec2_head" name="sec2_head"  placeholder="open in.."  >{!!$cas->sec2_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec2_head");
         </script>
@@ -46,7 +46,7 @@
 
     <div class="form-group">
         <label for="sec2_p">Second Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec2_p" name="sec2_p"  placeholder="open in.." required >{!!$cas->sec2_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec2_p" name="sec2_p"  placeholder="open in.."  >{!!$cas->sec2_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec2_p");
         </script>
@@ -61,7 +61,7 @@
     </div>
     <div class="form-group">
         <label for="sec3_head">Third Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec3_head" name="sec3_head"  placeholder="open in.." required >{!!$cas->sec3_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec3_head" name="sec3_head"  placeholder="open in.."  >{!!$cas->sec3_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec3_head");
         </script>
@@ -69,7 +69,7 @@
 
     <div class="form-group">
         <label for="sec3_p">Third Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec3_p" name="sec3_p"  placeholder="open in.." required >{!!$cas->sec3_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec3_p" name="sec3_p"  placeholder="open in.."  >{!!$cas->sec3_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec3_p");
         </script>
@@ -84,7 +84,7 @@
     </div>
     <div class="form-group">
         <label for="sec4_head">Fourth Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec4_head" name="sec4_head"  placeholder="open in.." required >{!!$cas->sec4_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec4_head" name="sec4_head"  placeholder="open in.."  >{!!$cas->sec4_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec4_head");
         </script>
@@ -92,7 +92,7 @@
 
     <div class="form-group">
         <label for="sec4_p">Fourth Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec4_p" name="sec4_p"  placeholder="open in.." required >{!!$cas->sec4_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec4_p" name="sec4_p"  placeholder="open in.."  >{!!$cas->sec4_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec4_p");
         </script>
@@ -107,7 +107,7 @@
     </div>
     <div class="form-group">
         <label for="sec5_head">Fivth Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec5_head" name="sec5_head"  placeholder="open in.." required >{!!$cas->sec5_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec5_head" name="sec5_head"  placeholder="open in.."  >{!!$cas->sec5_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec5_head");
         </script>
@@ -115,7 +115,7 @@
 
     <div class="form-group">
         <label for="sec5_p">Fivth Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec5_p" name="sec5_p"  placeholder="open in.." required >{!!$cas->sec5_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec5_p" name="sec5_p"  placeholder="open in.."  >{!!$cas->sec5_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec5_p");
         </script>
@@ -124,7 +124,7 @@
     <hr>
      <div class="form-group">
         <label for="sec6_head">sixth Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec6_head" name="sec6_head"  placeholder="open in.." required >{!!$cas->sec6_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec6_head" name="sec6_head"  placeholder="open in.."  >{!!$cas->sec6_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec6_head");
         </script>
@@ -132,7 +132,7 @@
 
     <div class="form-group">
         <label for="sec6_p">sixth Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec6_p" name="sec6_p"  placeholder="open in.." required >{!!$cas->sec6_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec6_p" name="sec6_p"  placeholder="open in.."  >{!!$cas->sec6_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec6_p");
         </script>
@@ -149,7 +149,7 @@
     </div>
     <div class="form-group">
         <label for="sec7_head">seventh Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec7_head" name="sec7_head"  placeholder="open in.." required >{!!$cas->sec7_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec7_head" name="sec7_head"  placeholder="open in.."  >{!!$cas->sec7_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec7_head");
         </script>
@@ -157,7 +157,7 @@
 
     <div class="form-group">
         <label for="sec7_p">seventh Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec7_p" name="sec7_p"  placeholder="open in.." required >{!!$cas->sec7_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec7_p" name="sec7_p"  placeholder="open in.."  >{!!$cas->sec7_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec5_p");
         </script>
@@ -171,7 +171,7 @@
     </div>
     <div class="form-group">
         <label for="sec8_head">eighth Paragraph Head</label>
-        <textarea type="text" class="form-control mb-3" id="sec8_head" name="sec8_head"  placeholder="open in.." required >{!!$cas->sec8_head!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec8_head" name="sec8_head"  placeholder="open in.."  >{!!$cas->sec8_head!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec8_head");
         </script>
@@ -179,7 +179,7 @@
 
     <div class="form-group">
         <label for="sec8_p">eighth Paragraph</label>
-        <textarea type="text" class="form-control mb-3" id="sec8_p" name="sec8_p"  placeholder="open in.." required >{!!$cas->sec7_p!!}</textarea>
+        <textarea type="text" class="form-control mb-3" id="sec8_p" name="sec8_p"  placeholder="open in.."  >{!!$cas->sec7_p!!}</textarea>
         <script type="text/javascript">
             CKEDITOR.replace("sec5_p");
         </script>

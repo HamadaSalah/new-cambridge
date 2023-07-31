@@ -15,9 +15,19 @@
                                     <h5>{!! $slider->top_head!!}</h5>
                                     <br>
                                         <div>
-                                            <p class="pe-5 second_color " style="font-size: 21px;font-family: 'Open Sans', sans-serif;">
+                                          <div class="seeless">
+                                            <p class="pe-5 second_color " style="font-size: 21px;font-family: 'Open Sans', sans-serif;margin-bottom: 0">
+                                                {!!substr($slider->head, 0, 235)!!}...
+                                             </p>
+
+                                          </div>
+                                          <div class="seemore">
+                                            <p class="pe-5 second_color " style="font-size: 21px;font-family: 'Open Sans', sans-serif;margin-bottom: 0">
                                                 {!!$slider->head!!}
-                                            </p>
+                                             </p>
+
+                                          </div>
+                                             <span class="SeeMore" style="display: block">See More</span>
                                         </div>
                                 </div>
                             </div>
@@ -90,7 +100,7 @@
             <div class="col-12 col-md-12 col-lg-6">
                 <div class="your-class Open_Sans_font second_color pb-3 m-0">
                     @foreach ($eventgall as $item)
-                    <img class="rounded-2 h-100" style="height: 470px!important" src="{{asset($item->img)}}"
+                    <img class="rounded-2 h-100" style="height: 470px" src="{{asset($item->img)}}"
                     alt="Event Photo">
                     @endforeach
                 </div>
@@ -319,6 +329,12 @@
 @push('custom-sc')
 <script>
   $(document).ready(function() {
+    $('.SeeMore').click(function(){
+      $(this).parent().parent().find(".seeless").css('display', 'none');
+      $(this).parent().parent().find('.seemore').css('display', 'block');
+      $(this).css('opacity', "0")
+    });
+ 
     $(".fc-prev-button.fc-button.fc-button-primary").html("<i class='fa fa-arrow-circle-left'></i>");
     $(".fc-next-button.fc-button.fc-button-primary").html("<i class='fa fa-arrow-circle-right'></i>");
     $('.clickerbtn').click(function() {

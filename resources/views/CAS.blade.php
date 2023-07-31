@@ -144,7 +144,7 @@
 
                 <p class="pb-2 lh-lg m-0 Open_Sans_font fw-semibold">
                     {!! $cas->sec5_p !!}
-                </p>h
+                </p>
 
                 <div class="col-12 mt-4">
                 <div id="carouselExample23" class="carousel slide">
@@ -220,16 +220,9 @@
             
             
           
-          <!--  <div class="col-12 col-md-12 col-lg-6 mt-4">
-                <h1 class="pb-3 m-0"> {!! $cas->sec8_head !!}</h1>
+            {!! $cas->sec8_head !!}
+                     {!! $cas->sec8_p !!}
 
-                <p class="pb-3 lh-lg m-0 Open_Sans_font fw-semibold">
-                    The five CAS stages are as follows.
-                </p>
-                <p class="pb-2 lh-lg m-0 Open_Sans_font fw-semibold">
-                    {!! $cas->sec8_p !!}
-                </p>
-            </div>-->
             <div class="d-flex justify-content-end me-5 mt-5" style="    display: block!important;
             text-align: right;
             margin-top: 20px!important;">
