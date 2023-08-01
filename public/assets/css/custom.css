@@ -130,8 +130,8 @@ footer .fa {
     margin-bottom: 30px;
     color: #a23837;
     position: relative;
-    z-index: 999999;
-}
+    cursor: pointer;
+ }
 .seemore {
     display: none;
 }
