@@ -4,22 +4,25 @@
 
 <div class="clearfix"></div>
 
-<form method="POST" action="{{route('admin.slider.update', $slider->id)}}" enctype="multipart/form-data">
+<form method="POST" action="{{route('admin.gallery.update', $gall->id)}}" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="form-group">
-        <label for="img">IMG</label>
-        <img src="{{asset($slider->img)}}" alt="" style="width: 100px;height: 100px;display: block;margin-bottom: 20px;border-radius: 5px">
-        <input type="file" class="form-control" id="img" name="img"  placeholder="Write Body..">
+        <label for="role">Select Category</label>
+        <select class="form-control" id="role" required name="category_id">
+          @foreach ($cats as $cat)
+            <option value="{{$cat->id}}" {{$cat->id == $gall->category->id ? 'selected' : ''}} >{{$cat->name}}</option>  
+          @endforeach
+        </select>
     </div>
     <div class="form-group">
-        <label for="name">Head</label>
-        @foreach ($slider->head as $item)
-        <input type="name" class="form-control mb-3" id="name" name="head[]"  placeholder="Write Head.." required value="{{$item}}">
-            
-        @endforeach
+        <label for="head">head</label>
+        <input type="text" class="form-control" id="head" name="head" required value="{{$gall->head}}">
     </div>
-
+    <div class="form-group">
+      <label for="IMG">IMG</label>
+      <input type="file" class="form-control" id="IMG" name="img"   >
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 

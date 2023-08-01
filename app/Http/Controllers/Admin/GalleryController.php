@@ -77,7 +77,10 @@ class GalleryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $cats = GallCategory::all();
+
+        $gall = Gallery::findOrFail($id);
+        return view('Admin.Gallery.edit', compact('gall', 'cats'));
     }
 
     /**
@@ -89,7 +92,19 @@ class GalleryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $request->validate([
+            'category_id' => 'required',
+            'head' => 'required',
+        ]);
+        $gall = Gallery::findOrFail($id);
+        $img = $this->verifyAndStoreImage($request) ?? $gall->img;
+         $gall->update([
+            'category_id' => $request->category_id,
+            'img' => $img,
+            'head' => $request->head,
+        ]);
+        return redirect()->route('admin.gallery.index');
     }
 
     /**

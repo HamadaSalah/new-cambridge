@@ -21,7 +21,7 @@
             <tbody>
                 @foreach ($gallerys as $gallery)
                 <tr>
-                    <td>{{$gallery->loop+1}}</td>
+                    <td>{{$loop->index+1}}</td>
                     <td>
                         <a data-fancybox="gallery" href="{{asset($gallery->img)}}"> <img src="{{asset($gallery->img)}}" style="width: 100px;height: 100px;" class="img-thumbnail" alt=""></a>    
                     </td>
@@ -33,6 +33,8 @@
                             @method('DELETE')
                             <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i> Delete</button>
                         </form>
+                        <a href="{{route('admin.gallery.edit', $gallery->id)}}"><button class="btn btn-success" type="submit"><i class="fa fa-edit"></i> Edit</button>
+                        </a>
                     </td>
                 </tr>
 
